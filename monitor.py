@@ -29,7 +29,7 @@ if __name__ == '__main__':
     for db, tables in db_datas.items():
         command = '''SELECT * FROM `information_schema`.TABLES;'''
         cmd = ''
-        if len(tables) > 0:
+        if tables is not None and len(tables) > 0:
             cmd += ' and '
             for i, table in enumerate(tables):
                 if i > 0:
