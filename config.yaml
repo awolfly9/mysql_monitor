@@ -1,0 +1,14 @@
+db:
+  blog:
+      - 'bill'
+      - 'blog_visit'
+
+  #house:
+  #    - 'FE_house'
+  #    - 'GJ_house'
+  #
+  #jd:
+  #    - 'jd'
+email:
+  - 'awolfly9@gmail.com'
+  - '1412238085@qq.com'
