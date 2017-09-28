@@ -21,6 +21,7 @@ def get_info(db, res):
 
 if __name__ == '__main__':
     path = os.getcwd()
+    os.chdir(path)
     with open('%s/config.yaml' % path, 'r') as stream:
         datas = yaml.load(stream)
 
