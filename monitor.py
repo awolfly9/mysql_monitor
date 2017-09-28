@@ -3,6 +3,7 @@
 import yaml
 import json
 import config
+import os
 from send_email import send_email
 from hammer.sqlhelper import SqlHelper
 
@@ -19,7 +20,8 @@ def get_info(db, res):
 
 
 if __name__ == '__main__':
-    with open('config.yaml', 'r') as stream:
+    path = os.getcwd()
+    with open('%s/config.yaml' % path, 'r') as stream:
         datas = yaml.load(stream)
 
     sql = SqlHelper(**config.db_config)
